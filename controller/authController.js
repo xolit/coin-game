@@ -87,7 +87,7 @@ module.exports.Home_get = async (req, res) => {
       return res.status(401).render("error", { message: "Unauthorized" });
     }
 
-    const decodedToken = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    const decodedToken = jwt.verify(token, '884070');
     const userId = decodedToken.id;
 
     const allUsers = await User.find();
@@ -108,7 +108,7 @@ module.exports.HomeAddCoin_post = async (req, res) => {
       return res.status(401).json({ message: "Unauthorized" });
     }
 
-    const decodedToken = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    const decodedToken = jwt.verify(token, '884070');
     const userId = decodedToken.id;
 
     const updatedUser = await User.findByIdAndUpdate(
