@@ -22,6 +22,7 @@ app.get("/", requireAuth ,authController.Home_get);
 app.post("/", authController.HomeAddCoin_post);
 app.use(allRoutes);
 
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
     console.log('server is running');
 });
