@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/883/707/original/black-and-golden-3d-sphere-ball-on-black-soft-blur-background-abstract-dark-color-banner-design-you-can-use-for-presentation-banner-cover-web-flyer-card-poster-game-slide-eps10-vector.jpg");
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+  }
+  .custom-navbar .navbar-brand,
+  .custom-navbar .navbar-nav .nav-link {
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .custom-navbar .navbar-toggler {
+    color: white !important;
+  }
+
+  .custom-navbar .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+  li {
+    font-size: larger;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    list-style: none;
+  }
+  .nav-gap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 40;
+    color: white;
+    font-size: xx-large;
+  }
+  .pointer:hover {
+    cursor: pointer;
+  }
+  .hero {
+    height: 100lvh;
+    width: 100lvw;
+    display: grid;
+    place-items: center;
+  }
+  #gainCoins {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: gold;
+    border: 5px solid goldenrod;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .leaderboard {
+    height: 50lvh;
+    width: 100lvw;
+    background-color: rgb(29, 31, 31);
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  .leaderboard::-webkit-scrollbar {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    color: white;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+  td {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  th {
+    background-color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
